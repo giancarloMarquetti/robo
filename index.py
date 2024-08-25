@@ -28,7 +28,7 @@ time.sleep(5)
 
 # Fourth step - read the file and starting registration
 # Use the pandas to the read csv and put information in new variable
-tabela = pd.read_csv("produtos.csv")
+tabela = pd.read_csv("lista_produtos.csv")
 for linha in tabela.index:
     pyautogui.click(x=691, y=324)
     codigo = tabela.loc[linha, "codigo"]
